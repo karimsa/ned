@@ -14,6 +14,21 @@ To install, run `npm i -g nedjs`.
 
 ## Examples
 
+### Simple: Say hi to everyone
+
+```
+$ cat test.txt
+Bob
+Joe
+Anne
+World
+$ cat test.txt | ned 'name => "Hello, " + name'
+Hello, Bob
+Hello, Joe
+Hello, Anne
+Hello, World
+```
+
 ### Replace a delimeter in stdin
 
 ```
