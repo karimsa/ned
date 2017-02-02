@@ -1,0 +1,41 @@
+{
+  "name": "nedjs",
+  "version": "0.0.1",
+  "description": "use javascript to manipulate stdin",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "node mkdata.js",
+    "build": "node_modules/.bin/mustache readme.json README.hb > README.md",
+    "postbuild": "rm readme.json"
+  },
+  "bin": {
+    "ned": "./ned"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karimsa/ned.git"
+  },
+  "keywords": [
+    "sed",
+    "manipulate",
+    "strings",
+    "stdin"
+  ],
+  "author": "Karim Alibhai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karimsa/ned/issues"
+  },
+  "homepage": "https://github.com/karimsa/ned#readme",
+  "dependencies": {
+    "map-stream": "0.0.6",
+    "minimist": "^1.2.0",
+    "sort-stream": "^1.0.1",
+    "split": "^1.0.0",
+    "stream-reduce": "^1.0.3",
+    "through": "^2.3.8"
+  },
+  "devDependencies": {
+    "mustache": "^2.3.0"
+  }
+}
