@@ -15,6 +15,7 @@ var mapStream = require('map-stream')
   , reduce = require('stream-reduce')
   , sort = require('sort-stream')
   , through = require('through')
+  , os = require('os')
   , argv = require('minimist')(process.argv.slice(2), {
       boolean: [
         'filter',  'f',
@@ -141,7 +142,7 @@ var functions = {
 
 // figure out delimeters
 var delim = new RegExp(argv.delim || argv.d || '\\r?\\n')
-  , joiner = eval('("' + (argv.join || argv.j || '') + '")')
+  , joiner = (argv.join || argv.j) ? eval('("' + (argv.join || argv.j) + '")') : os.EOL
 
 // start streaming
 process.stdin
