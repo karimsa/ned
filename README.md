@@ -4,6 +4,8 @@ use javascript to manipulate stdin.
 
 *Because sed is great but sometimes you just want some js*.
 
+[![NPM](https://nodei.co/npm/nedjs.png?downloads=true&stars=true)](https://nodei.co/npm/nedjs/)
+
 ## Usage
 
 To install, run `npm i -g nedjs`.
