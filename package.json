@@ -1,6 +1,6 @@
 {
   "name": "nedjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "use javascript to manipulate stdin",
   "main": "index.js",
   "scripts": {
