@@ -72,7 +72,9 @@ if (argv._.length !== 1 || argv.help || argv.h) help()
 var map = eval('(' + argv._[0] + ')')
 
 // setup stream
-process.stdout.setEncoding('utf8')
+if (typeof process.stdout.setEncoding === 'function') {
+  process.stdout.setEncoding('utf8')
+}
 process.stdin.setEncoding('utf8')
 process.stdin.resume()
 
