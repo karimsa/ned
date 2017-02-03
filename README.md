@@ -24,7 +24,7 @@ use javascript to manipulate stdin
   General options:
     --trim, -t              Trim all data from stdin
     --single, -c            Replace all multiple spaces with a single space
-    --delim, -d [delim]     Choose a delimeter to split by
+    --delim, -d [delim]     Choose a delimeter to split by (delim is in regex)
     --join, -j [delim]      Choose a delimeter to join by (after processing)
     --numeric, -n           Treat all incoming data as numeric
     --version, -v           Output the version number
